@@ -23,6 +23,7 @@ WIN_COMBINATIONS = [
    if blah.all?{|numb| board[numb] == "X"}
    windex = blah
   end
+  
   end
   
   if windex == []
