@@ -21,6 +21,7 @@ WIN_COMBINATIONS = [
   WIN_COMBINATIONS.each do |blah| 
     
    if blah.all?{|numb| board[numb] == "X"}
+   blah
    break
  else
    false
