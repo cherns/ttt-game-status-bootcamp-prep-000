@@ -21,16 +21,23 @@ WIN_COMBINATIONS = [
   WIN_COMBINATIONS.each do |blah| 
     
    if blah.all?{|numb| board[numb] == "X"}
-   gotwin = true
+   gotxwin = true
+   windex = blah
+  end
+  
+   if blah.all?{|numb| board[numb] == "O"}
+   gotowin = true
    windex = blah
   end
   
   end
   
-  if gotwin
+  if gotxwin && gotowin
+    puts "Draw!"
+    elsif gotxwin || gotowin
     windex
   else
-    false
+  false
   end
   
  
