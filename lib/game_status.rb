@@ -21,16 +21,14 @@ WIN_COMBINATIONS = [
   WIN_COMBINATIONS.each do |blah| 
     
    if blah.all?{|numb| board[numb] == "X"}
-   windex = blah
+   break
+ else
+   false
   end
   
   end
   
-  if windex == []
-    false
-  else
-    windex
-  end
+ 
 end
   
   
