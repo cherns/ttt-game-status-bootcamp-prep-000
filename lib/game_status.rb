@@ -30,6 +30,7 @@ WIN_COMBINATIONS = [
   else
     windex
   end
+end
   
   end
   
