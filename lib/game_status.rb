@@ -33,7 +33,7 @@ WIN_COMBINATIONS = [
   end
   
    if gotxwin && gotowin
-    puts "Draw!"
+    [d, r, a, w]
   elsif gotxwin || gotowin
     windex
   else
@@ -50,6 +50,16 @@ board.all?{|token| token == "X" || token == "O"}
 end  
   
   
+def draw?(board)
+  if !won?(board) && full?(board)
+    true
+    elsif !won?(board) && !full?(board)
+    false
+  elseif won?(board)
+    false
+  end
+    
+end 
  
   
  
