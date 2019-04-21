@@ -16,17 +16,22 @@ WIN_COMBINATIONS = [
   ]
   
   def won?(board)
+    gotwin = false
     windex = []
-    
   WIN_COMBINATIONS.each do |blah| 
     
    if blah.all?{|numb| board[numb] == "X"}
-   blah
-   break
- else
-   false
+   gotwin = true
+   windex = blah
+  else
   end
   
+  end
+  
+  if gotwin
+    windex
+  else
+    false
   end
   
  
