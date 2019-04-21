@@ -16,17 +16,20 @@ WIN_COMBINATIONS = [
   ]
   
   def won?(board)
-    win = []
+    windex = []
+    
   WIN_COMBINATIONS.each do |blah| 
-    until win = ["X", "X", "X"]
-    blah.each do |numb|
-    if board[numb] = "X"
-      win << board[numb]
-    else
-      win = []
-    end
+    
+   if blah.all?{|numb| board[numb] == "X"
+   windex = blah
   end
   end
-end
+  
+  if windex == []
+    FALSE
+  else
+    windex
+  end
+  
   end
   
