@@ -22,5 +22,7 @@ WIN_COMBINATIONS = [
     else
       FALSE
     end
+    
+  end
   end
   
