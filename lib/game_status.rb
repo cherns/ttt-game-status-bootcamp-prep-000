@@ -32,7 +32,13 @@ WIN_COMBINATIONS = [
   
   end
   
-  
+   if gotxwin && gotowin
+    puts "Draw!"
+  elsif gotxwin || gotowin
+    windex
+  else
+  false
+  end
   
   
 end
@@ -44,13 +50,7 @@ board.all?{|token| token == "X" || token == "O"}
 end  
   
   
-  if gotxwin && gotowin
-    puts "Draw!"
-  elsif gotxwin || gotowin
-    windex
-  else
-  false
-  end
+ 
   
  
 
