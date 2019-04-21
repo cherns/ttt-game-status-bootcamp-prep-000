@@ -14,3 +14,8 @@ WIN_COMBINATIONS = [
   [1, 4, 7],
   [2, 5, 8]
   ]
+  
+  def won?
+  WIN_COMBINATIONS.all?{ |blah|, blah == "X" || blah == "O"}  
+  end
+  
