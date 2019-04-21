@@ -27,7 +27,7 @@ WIN_COMBINATIONS = [
   end
   
   if windex == []
-    FALSE
+    false
   else
     windex
   end
