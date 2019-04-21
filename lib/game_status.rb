@@ -23,9 +23,8 @@ WIN_COMBINATIONS = [
    if blah.all?{|numb| board[numb] == "X"}
    gotxwin = true
    windex = blah
-  end
   
-   if blah.all?{|numb| board[numb] == "O"}
+   elsif blah.all?{|numb| board[numb] == "O"}
    gotowin = true
    windex = blah
   end
@@ -34,7 +33,7 @@ WIN_COMBINATIONS = [
   
   if gotxwin && gotowin
     puts "Draw!"
-    elsif gotxwin || gotowin
+  elsif gotxwin || gotowin
     windex
   else
   false
