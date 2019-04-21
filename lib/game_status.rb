@@ -16,6 +16,9 @@ WIN_COMBINATIONS = [
   ]
   
   def won?
-  WIN_COMBINATIONS.each{ |blah| blah == "X" || blah == "O"}  
+  WIN_COMBINATIONS.each do |blah| 
+    if blah !== "X" || blah !== "O"
+      FALSE
+    end
   end
   
