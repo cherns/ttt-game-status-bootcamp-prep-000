@@ -78,7 +78,7 @@ if board[won?(board)[0]] == "O"
  "O"
  elsif board[won?(board)[0]] == "X"
  "X"
- else
+ elseif !winner(board)
    nil
  end
  
