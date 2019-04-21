@@ -16,11 +16,14 @@ WIN_COMBINATIONS = [
   ]
   
   def won?(board)
+    win = []
   WIN_COMBINATIONS.each do |blah| 
-    if blah.all?{|inr| inr == "X" || inr == "O"}
-      blah
+    blah.each do |numb|
+    until win = [X, X, X]
+    if board[numb] = "X"
+      win << board[numb]
     else
-      FALSE
+      win = []
     end
     
   end
