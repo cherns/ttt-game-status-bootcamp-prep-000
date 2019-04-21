@@ -23,7 +23,6 @@ WIN_COMBINATIONS = [
    if blah.all?{|numb| board[numb] == "X"}
    gotwin = true
    windex = blah
-  else
   end
   
   end
