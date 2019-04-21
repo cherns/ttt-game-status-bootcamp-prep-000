@@ -75,7 +75,7 @@ end
 def winner(board)
   
 if !winner(board?)
-nil  
+    nil  
   
   elsif board[won?(board)[0]] == "O"
  "O"
