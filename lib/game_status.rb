@@ -32,6 +32,9 @@ WIN_COMBINATIONS = [
   
   end
   
+end
+  
+  
   if gotxwin && gotowin
     puts "Draw!"
   elsif gotxwin || gotowin
@@ -41,7 +44,7 @@ WIN_COMBINATIONS = [
   end
   
  
-end
+
   
   
   
