@@ -16,6 +16,6 @@ WIN_COMBINATIONS = [
   ]
   
   def won?
-  WIN_COMBINATIONS.all?{ |blah| blah == "X" || blah == "O"}  
+  WIN_COMBINATIONS.each{ |blah| blah == "X" || blah == "O"}  
   end
   
