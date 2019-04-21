@@ -74,12 +74,14 @@ end
 
 def winner(board)
   
-if board[won?(board)[0]] == "O"
+if !winner(board?)
+nil  
+  
+  elsif board[won?(board)[0]] == "O"
  "O"
  elsif board[won?(board)[0]] == "X"
  "X"
- elseif !winner(board)
-   nil
+ 
  end
  
   
