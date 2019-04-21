@@ -74,7 +74,7 @@ end
 
 def winner(board)
   
-if !winner(board)
+if !won?(board)
     nil  
   
   elsif board[won?(board)[0]] == "O"
