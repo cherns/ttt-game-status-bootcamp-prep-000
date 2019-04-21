@@ -20,7 +20,7 @@ WIN_COMBINATIONS = [
     
   WIN_COMBINATIONS.each do |blah| 
     
-   if blah.all?{|numb| board[numb] == "X"
+   if blah.all?{|numb| board[numb] == "X"}
    windex = blah
   end
   end
@@ -32,5 +32,5 @@ WIN_COMBINATIONS = [
   end
 end
   
-  end
+  
   
