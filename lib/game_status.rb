@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
   
   def won?
   WIN_COMBINATIONS.each do |blah| 
-    if blah !== "X" || blah !== "O"
+    if blah != "X" || blah != "O"
       FALSE
     end
   end
