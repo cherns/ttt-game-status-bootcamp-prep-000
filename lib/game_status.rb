@@ -16,7 +16,8 @@ WIN_COMBINATIONS = [
   ]
   
   def won?(board)
-    gotwin = false
+    gotxwin = false
+    gotowin = false
     windex = []
   WIN_COMBINATIONS.each do |blah| 
     
